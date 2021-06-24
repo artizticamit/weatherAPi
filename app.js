@@ -16,7 +16,7 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q='+inputValue.value+'&ap
       let tempValue = data['main']['temp']-273;
       let descValue = data['weather'][0]['description'];
       name.innerHTML  = nameValue;
-      temp.innerHTML = tempValue;
+      temp.innerHTML = tempValue + " Degree";
       desc.innerHTML = descValue;
   })
 
